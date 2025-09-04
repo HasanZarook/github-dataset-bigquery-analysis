@@ -221,7 +221,7 @@ Note that you need to fill in the `project_id` variable with the Google Cloud pr
 # Run this cell to authenticate yourself to BigQuery.
 from google.colab import auth
 auth.authenticate_user()
-project_id = "taskproj-398609"
+project_id = "your id"
 
 """## Visualization
 
@@ -234,7 +234,7 @@ If you are not familiar with matplotlib, please reference [this](https://matplot
 import matplotlib.pyplot as plt
 import pandas as pd
 from google.cloud import bigquery
-project_id = 'taskproj-398609'
+project_id = 'your id'
 
 """### How to Use BigQuery and visualize in Colab
 
@@ -328,7 +328,7 @@ plt.show()
 """
 
 # Commented out IPython magic to ensure Python compatibility.
-# %%bigquery --project taskproj-398609
+# %%bigquery --project yourid
 # SELECT COUNT(table.id) as Number_Of_Files, table.size as File_Size
 # FROM `cs145-fa21-326819.project2.github_repo_contents` as table
 # GROUP BY table.size LIMIT 1000
@@ -690,7 +690,7 @@ We studied only a handful of features that could correlate with a highly watched
 """
 
 # Commented out IPython magic to ensure Python compatibility.
-# %%bigquery --project taskproj-398609
+# %%bigquery --project your id
 # SELECT lrepo_name, COUNT(DISTINCT commit) as num_commits
 # FROM `cs145-fa19.project2.github_repo_commits`
 # GROUP BY lrepo_name
